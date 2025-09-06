@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Website Pribadi Fedora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>SELAMAT DATANG DI WEBSITE FEDORA</h1>
+    <nav>
+      <a href="#tentang">Tentang</a>
+      <a href="#hobi">Hobi</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#blog">Blog</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <br />
+    <button onclick="toggleDarkMode()">🌙 Mode Gelap</button>
+    <hr />
+  </header>
+
+  <!-- Tentang -->
+  <section id="tentang">
+    <h1>Fedora Ariefa Ardian</h1>
+    <br />
+    <img src="Fedora Ariefa A (7).JPG" alt="Foto Saya" />
+    <p>Halo! Nama saya Fedora. Saya sedang belajar HTML agar bisa membuat website sendiri. Saya suka belajar hal baru dan ingin menjadi web developer profesional.</p>
+    <a href="https://www.instagram.com/fedoraard/?next=%2F" target="_blank">Kunjungi media sosial saya</a>
+    <br /><br />
+    <button onclick="ubahWarna()">Ubah Warna Background</button>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hobi">
+    <h2>Hobi saya</h2>
+    <ul>
+      <li>Badminton</li>
+      <li>Coding</li>
+      <li>Renang</li>
+    </ul>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portofolio">
+    <h2>Portofolio</h2>
+    <p>Berikut adalah beberapa project portofolio saya:</p>
+
+    <h3>1. Website Kopi Donqi</h3>
+    <p>Berikut salah satu karya saya:</p>
+    <iframe src="website%20kopi%20donqi/index2.html"></iframe>
+
+    <br /><br />
+
+    <h3>2. Aplikasi Tubes Basdat</h3>
+    <iframe src="http://localhost/tubes-basdat/user/index.php"></iframe>
+    <a class="project-link" href="http://localhost/tubes-basdat/user/index.php" target="_blank">Lihat Aplikasi Tubes Basdat</a>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <p>Selamat datang di blog saya! Nantikan tulisan terbaru saya di sini.</p>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <h2>Kontak Saya</h2>
+    <form onsubmit="return validasiForm()">
+      <label for="nama">Nama: </label><br />
+      <input type="text" id="nama" name="nama" /><br /><br />
+
+      <label for="email">Email: </label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="pesan">Pesan:</label><br />
+      <textarea id="pesan" name="pesan"></textarea><br /><br />
+
+      <input type="submit" value="Kirim" />
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <hr />
+    <p>&copy; 2025 Website Pribadi Fedora</p>
+  </footer>
+
+  <!-- Tombol Back to Top -->
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+h

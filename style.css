@@ -1,0 +1,179 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    background-color: #ca1515;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+  }
+  
+  nav a:hover::after {
+    width: 100%;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  img {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form input[type="submit"] {
+    background-color: #ca1515;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #8c520f;
+    box-shadow: 0 0 15px #ca1515;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+  }
+  
+  button {
+    background: #ca1515;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #8c520f;
+    box-shadow: 0 0 15px #ca1515;
+  }
+  
+  #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ca1515;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+  }
+  
+  #backToTop:hover {
+    background: #8c520f;
+    box-shadow: 0 0 20px #ca1515;
+  }
+  
+  .dark-mode {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode section {
+    background: #333;
+    color: #fff;
+  }
+  
+  .dark-mode header {
+    background: #111;
+  }
+  
+  .dark-mode nav a::after {
+    background: #f1f1f1;
+  }
+  
+  .dark-mode button {
+    background: #444;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: none;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ca1515;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
